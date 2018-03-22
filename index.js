@@ -19,7 +19,8 @@ const buildOptions = (event) => {
 
 const postContent = JSON.stringify({
   build_parameters: {
-    RUN_NIGHTLY_BUILD: true
+    RUN_NIGHTLY_BUILD: true,
+    // add your build parameters here!
   }
 })
 

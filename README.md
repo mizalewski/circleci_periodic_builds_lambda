@@ -23,6 +23,16 @@ where:
 - **your_project_name** - the project name on CircleCI
 - **branch_to_build** - branch, which you want to be build
 
+## Build parameters
+
+You can specify build parameters, which will be passed to build script. In index.js you can find `build_parameters` option, which contains `RUN_NIGHTLY_BUILD` parameter set to `true` by default.
+
+You can add new or replace existed parameter with your own.
+
+For more information, you can check below links:
+- CircleCI 1.0: https://circleci.com/docs/1.0/parameterized-builds/
+- CircleCI 2.0: https://circleci.com/docs/2.0/env-vars/#injecting-environment-variables-with-the-api
+
 ## How to test your Lambda function
 
 You can check your Lambda by creating a test event. The event should be the same as for CloudWatch Events trigger. 
